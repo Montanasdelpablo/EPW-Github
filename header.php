@@ -7,6 +7,7 @@
 	?>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -15,16 +16,15 @@
 <nav class="mainnavigation">
 	<ul>
 		<li> HOME  </li>
-		<li> PORTFOLIO </li>
 		<li> ABOUT ME</li>
-		<li> MY BLOG </li>
+		<li> PORTFOLIO </li>
+		<li> BLOG </li>
 		<li> CONTACT </li>
 	</ul>
 
 	
 </nav>
 
-	<button id="button" value="Show menu" onclick="opennav();"> </button>
 	<script type="text/javascript">
 		open = false;
 
