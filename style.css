@@ -1,0 +1,163 @@
+@font-face {
+	font-family: Amicable;
+	src: url(fonts/perfectlyamicable.ttf);
+} 
+
+html {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	font-size:90px;
+	color: #EB7260;
+	font-family: Amicable;
+}
+
+.mainnavigation {
+	width:250px;
+	z-index: 9999;
+	background-color: #324053;
+	height:100%;
+	position: fixed;
+	font-family: Amicable;
+	left:-500px;
+}
+
+.mainnavigationopen {
+	width:250px;
+	z-index: 9999;
+	background-color: #324053;
+	height:100%;
+	position: fixed;
+	font-family: Amicable;
+	left:0px;
+}
+
+#mainnavigation ul {
+	list-style-type: none;
+}
+
+
+
+#maincontent1 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image:url(img/background.jpeg);
+	background-size:cover;
+}
+
+#maincontent2 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	
+}
+
+#maincontent2 h1 {
+	margin-left: 390px;
+	margin-top: 75px;
+}
+
+#maincontent2 #leftcontent2 {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	
+	background-color: #DED5CB;
+}
+
+#maincontent2 #rightcontent2 {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	left:50%;
+	background-color: #EB7260;
+}
+
+
+#maincontent3 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+}
+
+#maincontent3 h1 {
+	margin-left: 390px;
+	margin-top: 75px;
+}
+
+#maincontent3 #leftcontent3 {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background-image: url(img/aboutme.jpeg); 
+	background-size: cover;
+	
+}
+
+#maincontent3 #rightcontent3 {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	left:50%;
+	background-color: #DED5CB;
+	
+}
+
+
+#maincontent4 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: orange;
+}
+
+#maincontent4 h1 {
+	margin-left: 390px;
+	margin-top: 75px;
+}
+
+#maincontent4 #leftcontent4 {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: #DED5CB;
+}
+
+#maincontent4 #rightcontent4 {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	left:50%;
+	background-color: #EB7260;
+}
+
+
+footer {
+	height: 250px;
+	position: relative;
+	width: 100%;
+	background-color: #324053;
+	
+}
