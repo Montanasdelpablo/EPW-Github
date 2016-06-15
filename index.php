@@ -6,6 +6,18 @@ require 'header.php';
 
 
 <div id="maincontent1">
+	<div id="introduction">
+	<h1> Welcome to my Website! </h1>
+	<h4> Feel free to look around. Scroll down if you want to take a fast look. <br> Any questions? Contact me.</h4>
+
+	<div id="calltoaction">
+
+		<button class="introbutton"> <a href="#contact"> </a> MY PORTFOLIO </button>
+		<button class="introbutton"> <a href="#myportfolio"> </a> CONTACT ME </button>
+
+	</div>
+	</div>
+
 	
 
 </div>
