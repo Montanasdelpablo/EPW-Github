@@ -5,7 +5,7 @@ require 'header.php';
 
 ?>
 
-<?php get_template_part("sidebar-nav"); ?>
+<?php get_template_part("inc/sidebar-nav"); ?>
 
 <div id="page-content-wrapper">
 
@@ -18,18 +18,20 @@ require 'header.php';
 
 <div class="container-fluid" id="maincontent1">
 	<div class="row row-centered">
-		<div class="col-md-12" id="introduction">
+		<div class="col-md-12 text-center" id="introduction">
 		<h1> Welcome to my Website! </h1>
 		<h4> Feel free to look around. Scroll down if you want to take a fast look. <br> Any questions? Contact me.</h4>
-	</div>
 
-	<div class="row row-centered">
-	 	<div class="col-md-12" id="calltoaction">
+		<div class="row row-centered">
+	 	<div class="col-md-12 text-center" id="calltoaction">
 
 		<button class="introbutton" type="button"> <a href="#maincontent2">  MY PORTFOLIO</a> </button>
 		<button class="introbutton" type="button"> <a href="#contact"> CONTACT ME</a>  </button>
 		</div>
 	</div>
+	</div>
+
+	
 </div>
 
 	
@@ -57,9 +59,9 @@ require 'header.php';
 			echo "<div id='portfolioitem' class='col-md-3'>";
 
 			echo "<div class='entry-content'>";
-	  	    echo "<h3>";
+	  	    echo "<h1>";
 	  	    	the_title();
-	  	   	echo "</h3>";
+	  	   	echo "</h1>";
 				
 			  echo '</div>';
 				echo "<div class='row'>";
@@ -67,8 +69,9 @@ require 'header.php';
 		  	    echo "</div>";
 
 		  	    echo "<div class='row'>";
-					echo "<button> <a> Lees meer </a> </button>";
+		  	    	echo "<button class='readmorebutton'> <a> READ MORE </a> </button>";
 		  	    echo "</div>";
+		  	    
 			echo "</div>";
 			endwhile;
 
@@ -101,19 +104,18 @@ require 'header.php';
 			while ( $loop->have_posts() ) : $loop->the_post();
 			echo "<div id='profielitem' class='col-md-12'>";
 
-			echo "<div class='entry-content'>";
+			echo "<div class='row entry-content'>";
 	  	    echo "<h1>";
 	  	    	the_title();
 	  	   	echo "</h1>";
+				echo "<button class='readmorebutton'> <a> READ MORE </a> </button>";
+			echo '</div>';
 				
-			  echo '</div>';
 				echo "<div class='row'>";
 					the_post_thumbnail();
 		  	    echo "</div>";
 
-		  	    echo "<div class='row'>";
-					echo "<button> <a> Lees meer </a> </button>";
-		  	    echo "</div>";
+		  	    
 			echo "</div>";
 			endwhile;
 
@@ -146,19 +148,17 @@ require 'header.php';
 			while ( $loop->have_posts() ) : $loop->the_post();
 			echo "<div id='blogitem' class='col-md-3'>";
 
-			echo "<div class='entry-content'>";
+			echo "<div class='row entry-content'>";
 	  	    echo "<h1>";
 	  	    	the_title();
 	  	   	echo "</h1>";
-				
-			  echo '</div>';
+				echo "<button class='readmorebutton'> <a> READ MORE </a> </button>";
+			echo '</div>';
 				echo "<div class='row'>";
-					the_post_thumbnail();
+					the_post_thumbnail('blog-item-frontpage');
 		  	    echo "</div>";
 
-		  	    echo "<div class='row'>";
-					echo "<button> <a> Lees meer </a> </button>";
-		  	    echo "</div>";
+		  	    
 			echo "</div>";
 			endwhile;
 
@@ -171,6 +171,20 @@ require 'header.php';
 
 	</div>
 	</div>
+
+<div id="contact" class="container-fluid">
+
+<div class="row">
+	<h1 class='col-md-6 col-md-offset-3'> Contact me </h1>
+</div>
+
+<div class="row"  id="contactform">
+	
+<?php get_template_part("inc/contactform"); ?>
+
+</div>
+	
+</div>
 
 </div>
 
