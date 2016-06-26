@@ -1,3 +1,5 @@
+
+
 @font-face {
 	font-family: Amicable;
 	src: url(fonts/perfectlyamicable.ttf);
@@ -22,6 +24,8 @@ html {
 		width: 100%;
 		height: 100%;
 		font-family: Open Sans;
+		position: relative;
+    	overflow-x: hidden;
 	}
 
 body {
@@ -37,6 +41,11 @@ h1 {
 	font-family: RalewayBold;
 }
 
+p {
+	font-size:18px;
+	font-family: Open Sans;
+}
+/*
 .mainnavigation {
 	width:250px;
 	z-index: 9999;
@@ -65,7 +74,17 @@ h1 {
 #mainnavigation ul {
 	list-style-type: none;
 }
+*/
 
+
+.row {
+	margin:0;
+	padding:0;
+	margin-bottom:25px;
+	margin-top:25px;
+}
+
+@media only screen and (min-width : 320px) {
 
 
 #maincontent1 {
@@ -80,24 +99,20 @@ h1 {
 }
 
 #introduction {
-	margin: 0 auto;
-	height:50%;
-	width:50%;
-	top:35%;
-	position: relative;
+	top:250px;
+	
 
 }
 
 
 #calltoaction {
-	margin: 0 auto;
-	height:5%;
-	width:70%;
+	top:250px;
+	
+	margin-bottom:25px;
 }
 
 #calltoaction .introbutton {
 	margin-right:30px;
-	padding:15px 15px 15px 15px;
 	width:150px;
 	background-color: #F07766;
 	color:#625E55;
@@ -110,33 +125,41 @@ h1 {
 	font-family: RalewayBold;
 }
 
+#introduction h1 {
+	color:#fff;
+	font-size:5em;
+}
+
 #maincontent2 {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
 	position: relative;
-	
+	background-color: #F07766;
+}
+
+#maincontent2 .row {
+	margin:0;
+	padding: 0;
+	margin-top:;
+	width:100%;
 }
 
 #maincontent2 h1 {
-	margin-left: 390px;
-	margin-top: 75px;
+	
 }
 
 #maincontent2 #leftcontent2 {
-	position: absolute;
-	width: 50%;
-	height: 100%;
 	background-color: #F07766;
 	outline:2px solid grey;
+	padding-bottom:25px;
+	padding-top:25px;
+	
 }
 
 #maincontent2 #rightcontent2 {
-	position: absolute;
-	width: 50%;
 	height: 100%;
-	left:50%;
 	background-image: url(img/wood.jpeg); 
 	background-size: cover;
 	outline:2px solid grey;
@@ -149,17 +172,21 @@ h1 {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	background-color: #F07766;
 
+}
+
+#maincontent3 .row {
+	margin:0;
+	padding: 0;
+	width:100%;
 }
 
 #maincontent3 h1 {
-	margin-left: 390px;
-	margin-top: 75px;
+	
 }
 
 #maincontent3 #leftcontent3 {
-	position: absolute;
-	width: 50%;
 	height: 100%;
 	background-image: url(img/wood.jpeg); 
 	background-size: cover;
@@ -168,12 +195,10 @@ h1 {
 }
 
 #maincontent3 #rightcontent3 {
-	position: absolute;
-	width: 50%;
-	height: 100%;
-	left:50%;
 	background-color: #F07766;
 	outline:2px solid grey;
+	padding-bottom:25px;
+	padding-top:25px;
 	
 }
 
@@ -183,28 +208,28 @@ h1 {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	
+	background-color: #F07766;
+}
+
+#maincontent4 .row {
+	margin:0;
+	padding: 0;
+	width:100%;
 }
 
 #maincontent4 h1 {
-	margin-left: 390px;
-	margin-top: 75px;
+	
 }
 
 #maincontent4 #leftcontent4 {
-	position: absolute;
-	width: 50%;
-	height: 100%;
-	float: left;
 	background-color: #F07766;
 	outline:2px solid grey;
+	padding-top:25px;
+	padding-bottom:25px;
 }
 
 #maincontent4 #rightcontent4 {
-	position: absolute;
-	width: 50%;
-	height: 100%;
-	left:50%;
+	height:100%;
 	background-image: url(img/wood.jpeg); 
 	background-size: cover;
 	outline:2px solid grey;
@@ -212,10 +237,44 @@ h1 {
 
 
 footer {
-	height: 250px;
+	height: 40%;
 	position: relative;
 	width: 100%;
 	background-color: #625E55;
 	border-top:5px solid grey;
+	bottom:0;
 	
 }
+
+ }
+
+
+@media only screen and (min-width : 768px) {
+
+
+#introduction {
+	
+	left:20%;
+}
+
+#introduction h1 {
+	font-size:40px;
+}
+
+#calltoaction {
+	top:250px;
+	margin-bottom:25px;
+	left:20%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
