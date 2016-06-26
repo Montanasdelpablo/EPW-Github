@@ -108,23 +108,64 @@ p {
 
 }
 
+.readmorebutton {
+	background-color: #F07766;
+	width: 120px;
+	height:50px;
+	border:4px solid #625E55;
+}
+
+.readmorebutton a {
+	color:#625E55;
+	text-decoration: none;
+
+}
+
+.readmorebutton a:hover {
+	color:#fff;
+	background-color:#625E55;
+	padding:8px 11px 8px 11px;
+}
+
 #introduction {
-	top:250px;
+	background-color: #f07766;
+	height:300px;
+	padding-top:10px;
+	position: relative;
+	top:150px;
 	}
 
 
 #calltoaction {
-	top:250px;
-	margin-bottom:25px;
+	margin-bottom:45px;
+	position: absolute;
+	top:270px;
+	left:110px;
 }
 
+
+
 #calltoaction .introbutton {
-	margin-right:30px;
-	width:150px;
+	margin-right:10px;
+	width:190px;
+	height:50px;
 	background-color: #F07766;
-	color:#625E55;
 	font-family: RalewayBold;
-	border:2px solid #625E55;
+	border:4px solid #625E55;
+}
+
+#calltoaction .introbutton a {
+	color:#625E55;
+	font-size:18px;
+	text-decoration: none;
+	padding: 8px 19px 8px 19px;
+}
+
+
+#calltoaction .introbutton a:hover {
+	color:#fff;
+	background-color: #625E55;
+	
 }
 
 #introduction h4 {
@@ -176,8 +217,8 @@ p {
 #maincontent2 #portfolioitem {
 	background-color:#F07766;
 	margin:55px 20px 45px 20px;
-	height:270px;
-	width:350px;
+	height:335px;
+	width:370px;
 	padding-top:15px;
 	padding-right:5px;
 	position: relative;
@@ -247,7 +288,14 @@ p {
 
 #profielitem img {
 	width:100%;
-	height:250px;
+	height:450px;
+}
+
+#profielitem .readmorebutton {
+	position: absolute;
+	left:485px;
+	top:32px;
+
 }
 
 
@@ -294,13 +342,45 @@ p {
 }
 
 #maincontent4 #blogitem:last-child {
-	padding-bottom:290px;
+	padding-bottom:100px;
 }
 
 #blogitem img {
-	width:100%;
+	width:70%;
 	height:250px;
 }
+
+#blogitem .readmorebutton {
+	position: absolute;
+	left:485px;
+	top:32px;
+
+}
+
+#contact {
+	background-color:#fff;
+	width: 100%;
+	height:550px;
+	position: relative;
+	top:230px;
+	font-family: Open Sans;
+}
+
+#contact h1 {
+	color:#1c1c1c;
+	font-family: RalewayBold;
+}
+
+#contactform {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	background-color:#fff;
+	padding-left:0px;
+	
+
+}
+
 
 
 
@@ -354,11 +434,20 @@ p {
  	
  }
 
+
+/* MEDIA QUERIES ABOVE 768px */
+
+
 @media only screen and (min-width : 768px) {
 
 
+
+
 #introduction {
-	left:20%;
+	background-color: #f07766;
+	height:300px;
+	padding-top:10px;
+	position: relative;
 }
 
 #introduction h1 {
@@ -366,11 +455,33 @@ p {
 }
 
 #calltoaction {
-	top:250px;
 	margin-bottom:25px;
-	left:25%;
+	position: absolute;
+	top:170px;
+	left:15px;
 }
 
+#calltoaction .introbutton {
+	margin-right:30px;
+	width:250px;
+	height:70px;
+	background-color: #F07766;
+	font-size:20px;
+	font-family: RalewayBold;
+	border:4px solid #625E55;
+}
+
+#calltoaction .introbutton a {
+	color:#625E55;
+	font-size:25px;
+	text-decoration: none;
+	padding:12px 23px 12px 23px;
+}
+
+#calltoaction .introbutton a:hover {
+	color:#fff;
+	background-color:#625E55;
+}
 
 
 #maincontent2 #portfolioitem {
@@ -405,6 +516,12 @@ p {
 #profielitem img {
 	width:700px;
 	height:550px;
+}
+
+#profielitem .readmorebutton {
+	position: absolute;
+	left:450px;
+	top:25px;
 
 }
 
@@ -426,7 +543,27 @@ p {
 }
 
 #blogitem img {
+
+}
+
+#blogitem:last-child button {
+	top:133px;
+}
+#contact {
+	width: 100%;
+	height:550px;
+	position: relative;
+	top:110px;
+}
+
+#contactform {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	background-color:#fff;
+	padding-left:0px;
 	
+
 }
 
 #footer {
