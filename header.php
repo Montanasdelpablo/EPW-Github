@@ -5,25 +5,24 @@
 	<?php wp_head(); 
 
 	?>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/menu.css">	
+	
+	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/theme-responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/style.css">
+	
+	
+	
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
 
-<nav class="mainnavigation">
-	<ul>
-		<li> HOME  </li>
-		<li> ABOUT ME</li>
-		<li> PORTFOLIO </li>
-		<li> BLOG </li>
-		<li> CONTACT </li>
-	</ul>
 
-	
-</nav>
 
 	<script type="text/javascript">
 		open = false;
