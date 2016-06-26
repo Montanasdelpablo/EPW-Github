@@ -3,8 +3,8 @@
 
 	<div class="row">
 		
-		<div class="col-xs-4">
-			<h1> Meta	</h1>
+		<div class="col-xs-5 text-right">
+			<h1> Meta data	</h1>
 			<ul>
 			<!-- META GEGEVENS SITE -->
 				<li>
@@ -31,28 +31,29 @@
 			</ul>
 		</div>
 
-		<div class="col-xs-4">
+		<div class="col-xs-2">
 			<!-- SOCIAL MEDIA ICONS -->
-			<ul>
+			<ul id="socialmediaicons">
 				<li>
-					<img src="">
+					<img src="<?php echo bloginfo('template_url');?>/img/facebook.png">
 				</li>
+				
 				<li>
-					<img src="">
+					<img src="<?php echo bloginfo('template_url');?>/img/twitter.png">
 				</li>
+
 				<li>
-					<img src="">
+					<img src="<?php echo bloginfo('template_url');?>/img/linkedin.png">
 				</li>
 			</ul>
 		</div>
 
-		<div class="col-xs-4">
+		<div class="col-xs-5">
 		<!-- CONTACT DETAILS -->
-			<h1> Contact	</h1>
-
+			<h1>  Contact	</h1>
 			<ul>
 				<li> 
-					<a href=""> Pablo </a>
+					<a href=""> Pablo ~ </a>
 				</li>
 
 				<li> 
@@ -60,7 +61,7 @@
 				</li>
 
 				<li> 
-					<a href=""> Groningen </a>
+					<a href=""> ~ Groningen </a>
 				</li>
 
 				
