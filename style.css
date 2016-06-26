@@ -83,7 +83,17 @@ p {
 	margin-bottom:25px;
 	margin-top:25px;
 }
-
+/*
+.container-bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url(img/wood.jpeg);
+	background-size: cover;
+	background-position: fixed;
+	
+}
+*/
 @media only screen and (min-width : 320px) {
 
 
@@ -100,14 +110,11 @@ p {
 
 #introduction {
 	top:250px;
-	
-
-}
+	}
 
 
 #calltoaction {
 	top:250px;
-	
 	margin-bottom:25px;
 }
 
@@ -160,7 +167,7 @@ p {
 
 #maincontent2 #rightcontent2 {
 	height: 100%;
-	background-image: url(img/wood.jpeg); 
+	background-image: url(img/wood.jpeg);
 	background-size: cover;
 	outline:2px solid grey;
 	
@@ -172,9 +179,11 @@ p {
 	height:270px;
 	width:350px;
 	padding-top:15px;
-	float: left;
 	padding-right:5px;
+	position: relative;
+	display: inline-block;
 }
+
 
 #portfolioitem h3 {
 	color:#625E55;
@@ -200,6 +209,7 @@ p {
 	height: 100%;
 	position: relative;
 	background-color: #F07766;
+	top:25px;
 
 }
 
@@ -217,6 +227,7 @@ p {
 	outline:2px solid grey;
 	padding-bottom:25px;
 	padding-top:25px;
+	position: relative;
 	
 }
 
@@ -227,10 +238,17 @@ p {
 	background-size: cover;
 	outline:2px solid grey;
 
-
-	
 }
 
+#maincontent3 #profielitem {
+	padding-top:5px;
+	padding-bottom:25px;
+}
+
+#profielitem img {
+	width:100%;
+	height:250px;
+}
 
 
 #maincontent4 {
@@ -238,8 +256,11 @@ p {
 	padding: 0;
 	width: 100%;
 	height: 100%;
+	position: relative;
 	background-color: #F07766;
-}
+	top:50px;
+	
+	}
 
 #maincontent4 .row {
 	margin:0;
@@ -256,24 +277,36 @@ p {
 	outline:2px solid grey;
 	padding-top:25px;
 	padding-bottom:25px;
+	
 }
 
 #maincontent4 #rightcontent4 {
-	height:100%;
+	height:150%;
 	background-image: url(img/wood.jpeg); 
 	background-size: cover;
 	outline:2px solid grey;
+
+}
+
+#maincontent4 #blogitem {
+	padding-top:25px;
+
+}
+
+#maincontent4 #blogitem:last-child {
+	padding-bottom:290px;
+}
+
+#blogitem img {
+	width:100%;
+	height:250px;
 }
 
 
-footer {
-	
-	
-}
 
 #footer {
-	height: 35%;
-	position: relative;
+	height: 220px;
+	position: fixed;
 	width: 100%;
 	background-color: #625E55;
 	border-top:5px solid grey;
@@ -290,9 +323,13 @@ footer {
 
  #footer ul li {
  	list-style-type: none;
-
+ 	
  }
 
+ #footer ul li a:hover {
+ 	color:#f07766;
+ 	text-decoration: none;
+ }
 
 
  #footer ul li a {
@@ -300,6 +337,22 @@ footer {
  	font-family: RalewayRegular;
  }
 
+ #footer ul li img {
+ 	width:25px;
+ 	height:25px;
+ }
+ 
+ #footer .row div {
+ 	display: inline-block;
+ 	height:100%;
+ 	 }
+
+ #footer #socialmediaicons li {
+ 	margin-top:5px;
+ 	position: relative;
+ 	top:27px;
+ 	
+ }
 
 @media only screen and (min-width : 768px) {
 
@@ -309,14 +362,16 @@ footer {
 }
 
 #introduction h1 {
-	font-size:40px;
+	font-size:4em;
 }
 
 #calltoaction {
 	top:250px;
 	margin-bottom:25px;
-	left:20%;
+	left:25%;
 }
+
+
 
 #maincontent2 #portfolioitem {
 	background-color:#F07766;
@@ -331,33 +386,99 @@ footer {
 	height:120px;
 }
 
+
+
 #maincontent2 #portfolioitem img {
 	max-width: 100%;
 	height:138px;
 }
 
+#maincontent3 {
+	top:0px;
+}
+
+ #maincontent3 #profielitem {
+	margin-left:35px;
+	margin-top:35px;
+}
+
+#profielitem img {
+	width:700px;
+	height:550px;
+
+}
+
+#maincontent4 {
+	top:0px;
+	padding-bottom:50px;
+	height:auto;
+}
+
+#maincontent4 #blogitem {
+	width: 100%;
+	height:200px;
+	padding-top:25px;
+	margin-top:20px;
+}
+
+#maincontent4 #blogitem:last-child {
+	padding-top:130px;
+}
+
+#blogitem img {
+	
+}
+
 #footer {
-	height: 40%;
-	position: relative;
+	height: 150px;
+	position: fixed;
 	width: 100%;
 	background-color: #625E55;
 	border-top:5px solid grey;
 	bottom:0;
 	}
 
-#footer ul, h1 {
- 	margin-left:70px;
- 	margin-right:70px;
- }
+
 
 #footer ul li {
  	list-style-type: none;
+ 	display: inline;
+
  }
 
  #footer ul li a {
  	color:#fff;
  	font-family: RalewayRegular;
  }
+
+ #footer ul li img {
+ 	width:45px;
+ 	height:45px;
+ 	
+ }
+
+#footer .row div {
+ 	display: inline-block;
+ 	height:100%;
+ }
+
+ #socialmediaicons {
+ 	width:100%;
+ 	height:100%;
+
+ }
+
+ #footer #socialmediaicons li {
+ 	margin-top:5px;
+ 	width:45px;
+ 	height:45px;
+ 	position: relative;
+ 	top:27px;
+ 	margin-right:5px;
+ 	margin-left:5px;
+ 	
+ }
+
 
 
 
