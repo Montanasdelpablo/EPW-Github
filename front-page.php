@@ -26,8 +26,8 @@ require 'header.php';
 	<div class="row row-centered">
 	 	<div class="col-md-12" id="calltoaction">
 
-		<button class="introbutton"> <a href="#contact"> </a> MY PORTFOLIO </button>
-		<button class="introbutton"> <a href="#myportfolio"> </a> CONTACT ME </button>
+		<button class="introbutton" type="button"> <a href="#maincontent2">  MY PORTFOLIO</a> </button>
+		<button class="introbutton" type="button"> <a href="#contact"> CONTACT ME</a>  </button>
 		</div>
 	</div>
 </div>
@@ -36,6 +36,7 @@ require 'header.php';
 
 </div>
 
+<div class="container-bg">
 <div class="container-fluid" id="maincontent2">
 	<div class="row">
 		<div class="col-md-6" id="leftcontent2"> 
@@ -49,7 +50,7 @@ require 'header.php';
 		<div class="row">
 			<?php 
 
-			$args = array( 'post_type' => 'portfolio', 'posts_per_page' => 10 );
+			$args = array( 'post_type' => 'portfolio', 'posts_per_page' => 9, 'order' => 'ASC' );
 			$loop = new WP_Query( $args );
 			
 			while ( $loop->have_posts() ) : $loop->the_post();
@@ -92,6 +93,32 @@ require 'header.php';
 		<div class="col-md-6" id="rightcontent3"> 
 
 
+		<?php 
+
+			$args = array( 'post_type' => 'profiel', 'posts_per_page' => 1 );
+			$loop = new WP_Query( $args );
+			
+			while ( $loop->have_posts() ) : $loop->the_post();
+			echo "<div id='profielitem' class='col-md-12'>";
+
+			echo "<div class='entry-content'>";
+	  	    echo "<h1>";
+	  	    	the_title();
+	  	   	echo "</h1>";
+				
+			  echo '</div>';
+				echo "<div class='row'>";
+					the_post_thumbnail();
+		  	    echo "</div>";
+
+		  	    echo "<div class='row'>";
+					echo "<button> <a> Lees meer </a> </button>";
+		  	    echo "</div>";
+			echo "</div>";
+			endwhile;
+
+			?>
+
 		</div>
 
 	</div>
@@ -99,29 +126,60 @@ require 'header.php';
 </div>
 
 <div class="container-fluid" id="maincontent4">
-	<div class="row">
+		<div class="row">
 
-		<div class="col-md-6" id="leftcontent4"> 
-		<h1> My blog <h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac fringilla enim, vitae ultrices justo. Curabitur in dolor interdum, feugiat augue vel, congue purus. Quisque vitae diam turpis. Sed vestibulum porta augue, id interdum tellus interdum consectetur. Etiam sagittis nisi vel mi rutrum elementum. In non placerat nibh, eget dignissim urna. In malesuada risus arcu, sed ornare massa tempus ac. Sed sodales sapien id eros congue, at dictum risus laoreet. Duis sed quam eu nibh lobortis dapibus sed eget quam. Aliquam finibus, magna consectetur convallis gravida, nibh tortor eleifend nisi, in congue lorem lacus vitae sapien. Nunc ac efficitur dui, porta bibendum odio.
+			<div class="col-md-6" id="leftcontent4"> 
+				<h1> My blog <h1>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac fringilla enim, vitae ultrices justo. Curabitur in dolor interdum, feugiat augue vel, congue purus. Quisque vitae diam turpis. Sed vestibulum porta augue, id interdum tellus interdum consectetur. Etiam sagittis nisi vel mi rutrum elementum. In non placerat nibh, eget dignissim urna. In malesuada risus arcu, sed ornare massa tempus ac. Sed sodales sapien id eros congue, at dictum risus laoreet. Duis sed quam eu nibh lobortis dapibus sed eget quam. Aliquam finibus, magna consectetur convallis gravida, nibh tortor eleifend nisi, in congue lorem lacus vitae sapien. Nunc ac efficitur dui, porta bibendum odio.
 
-</p>
+				</p>
 
-		</div>
-		<div class="col-md-6" id="rightcontent4"> 
+			</div>
+			<div class="col-md-6" id="rightcontent4"> 
 
+
+			<?php 
+
+			$args = array( 'post_type' => 'blog', 'posts_per_page' => 2, 'order' => 'ASC' );
+			$loop = new WP_Query( $args );
+			
+			while ( $loop->have_posts() ) : $loop->the_post();
+			echo "<div id='blogitem' class='col-md-3'>";
+
+			echo "<div class='entry-content'>";
+	  	    echo "<h1>";
+	  	    	the_title();
+	  	   	echo "</h1>";
+				
+			  echo '</div>';
+				echo "<div class='row'>";
+					the_post_thumbnail();
+		  	    echo "</div>";
+
+		  	    echo "<div class='row'>";
+					echo "<button> <a> Lees meer </a> </button>";
+		  	    echo "</div>";
+			echo "</div>";
+			endwhile;
+
+			?>
+
+
+			</div>
 
 		</div>
 
 	</div>
+	</div>
 
 </div>
-</div>
-
 
 
 <?php 
 
 require 'footer.php';
 
+
+
 ?>
+
