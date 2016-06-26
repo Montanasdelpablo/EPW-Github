@@ -9,6 +9,7 @@ add_theme_support( 'post-thumbnails' );
 // image sizes
 
 add_image_size ('portfolio-item-frontpage', 230, 180);
+add_image_size ('blog-item-frontpage', 350, 9999);
 
 
 // enqueue scripts
