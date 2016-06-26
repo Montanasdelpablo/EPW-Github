@@ -1,4 +1,6 @@
-<footer class="container-fluid">
+<footer id="footer" class="container-fluid">
+	
+
 	<div class="row">
 		
 		<div class="col-xs-4">
@@ -52,7 +54,7 @@
 				<li> 
 					<a href=""> Pablo </a>
 				</li>
-				
+
 				<li> 
 					<a href=""> Oude kijk in't Jatstraat 36a </a>
 				</li>
@@ -68,6 +70,8 @@
 
 
 	</div>
+
+
 	
 	
 </footer>
