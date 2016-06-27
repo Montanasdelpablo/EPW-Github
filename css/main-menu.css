@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
-/* Starter CSS for Menu */
+
 #cssmenu {
   padding: 0;
   margin: 0;
@@ -61,12 +61,14 @@
   line-height: 1em;
   text-decoration: none;
 }
+
 /* Custom CSS Styles */
 #cssmenu {
   background: #fff;
   border-bottom: 4px solid #F07766;
   font-family: RalewayBold;
   font-size: 14px;
+  margin: 0 auto;
 }
 #cssmenu > ul {
   *display: inline-block;
