@@ -43,7 +43,11 @@ require 'header.php';
 	<div class="row">
 		<div class="col-md-6" id="leftcontent2"> 
 		<h1> Portfolio <h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac fringilla enim, vitae ultrices justo. Curabitur in dolor interdum, feugiat augue vel, congue purus. Quisque vitae diam turpis. Sed vestibulum porta augue, id interdum tellus interdum consectetur. Etiam sagittis nisi vel mi rutrum elementum. In non placerat nibh, eget dignissim urna. In malesuada risus arcu, sed ornare massa tempus ac. Sed sodales sapien id eros congue, at dictum risus laoreet. Duis sed quam eu nibh lobortis dapibus sed eget quam. Aliquam finibus, magna consectetur convallis gravida, nibh tortor eleifend nisi, in congue lorem lacus vitae sapien. Nunc ac efficitur dui, porta bibendum odio.
+		<p> 
+Below this or right from this you will see the different portfolio items. The button will take you to the post. From there you can watch other items or you can specify which category you want to see.
+<br>
+All the portfolio items are divided into short letter codes. For example; IMI stands for "Interactive Media Ideation". Where IMP stands for "Interactive Media Production".
+<br>
 
 </p>
 		</div>
@@ -69,7 +73,8 @@ require 'header.php';
 		  	    echo "</div>";
 
 		  	    echo "<div class='row'>";
-		  	    	echo "<button class='readmorebutton'> <a> READ MORE </a> </button>";
+		  	    $y = get_permalink();
+		  	    	echo "<button  class='readmorebutton'> <a href='$y'> READ MORE </a> </button>";
 		  	    echo "</div>";
 		  	    
 			echo "</div>";
@@ -89,8 +94,10 @@ require 'header.php';
 		
 		<div class="col-md-6" id="leftcontent3"> 
 		<h1> About me <h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac fringilla enim, vitae ultrices justo. Curabitur in dolor interdum, feugiat augue vel, congue purus. Quisque vitae diam turpis. Sed vestibulum porta augue, id interdum tellus interdum consectetur. Etiam sagittis nisi vel mi rutrum elementum. In non placerat nibh, eget dignissim urna. In malesuada risus arcu, sed ornare massa tempus ac. Sed sodales sapien id eros congue, at dictum risus laoreet. Duis sed quam eu nibh lobortis dapibus sed eget quam. Aliquam finibus, magna consectetur convallis gravida, nibh tortor eleifend nisi, in congue lorem lacus vitae sapien. Nunc ac efficitur dui, porta bibendum odio.
- </p>
+		<p> 
+		If you want to know something about me, make sure to check out the profile to the right or below this element. From there you can read my curriculum vitae and see the different skills I have.
+		<button class="readmorebutton"> <a href="index.php?page_id=7"> READ MORE </a> </button>
+		 </p>
 
 		</div>
 		<div class="col-md-6" id="rightcontent3"> 
@@ -108,7 +115,8 @@ require 'header.php';
 	  	    echo "<h1>";
 	  	    	the_title();
 	  	   	echo "</h1>";
-				echo "<button class='readmorebutton'> <a> READ MORE </a> </button>";
+	  	   	 //$y = get_permalink();
+				//echo "<button class='readmorebutton'> <a  href='$y'> READ MORE </a> </button>";
 			echo '</div>';
 				
 				echo "<div class='row'>";
@@ -132,7 +140,7 @@ require 'header.php';
 
 			<div class="col-md-6" id="leftcontent4"> 
 				<h1> My blog <h1>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac fringilla enim, vitae ultrices justo. Curabitur in dolor interdum, feugiat augue vel, congue purus. Quisque vitae diam turpis. Sed vestibulum porta augue, id interdum tellus interdum consectetur. Etiam sagittis nisi vel mi rutrum elementum. In non placerat nibh, eget dignissim urna. In malesuada risus arcu, sed ornare massa tempus ac. Sed sodales sapien id eros congue, at dictum risus laoreet. Duis sed quam eu nibh lobortis dapibus sed eget quam. Aliquam finibus, magna consectetur convallis gravida, nibh tortor eleifend nisi, in congue lorem lacus vitae sapien. Nunc ac efficitur dui, porta bibendum odio.
+				<p> During the years, I have written a lot. Usually these writings go into my blog, feel free to check out some subjects. They vary alot! 
 
 				</p>
 
@@ -152,7 +160,8 @@ require 'header.php';
 	  	    echo "<h1>";
 	  	    	the_title();
 	  	   	echo "</h1>";
-				echo "<button class='readmorebutton'> <a> READ MORE </a> </button>";
+	  	   	 $y = get_permalink();
+				echo "<button class='readmorebutton'> <a href='$y' > READ MORE </a> </button>";
 			echo '</div>';
 				echo "<div class='row'>";
 					the_post_thumbnail('blog-item-frontpage');
