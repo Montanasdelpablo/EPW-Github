@@ -1,28 +1,41 @@
 <?php 
 
-// show admin bar
- show_admin_bar( false ); 
+if ( ! function_exists( 'epw_setup' ) ) :
 
-// add theme support
-add_theme_support( 'post-thumbnails' );
+function epw_setup() {
 
-// image sizes
+    // show admin bar
+     show_admin_bar( false ); 
 
-add_image_size ('portfolio-item-frontpage', 230, 180);
-add_image_size ('blog-item-frontpage', 350, 9999);
+    // add theme support
+    add_theme_support( 'post-thumbnails' );
 
+    // image sizes
 
-// enqueue scripts
- function enqueuescripts () {
- 	wp_enqueue_script("jquery");
- 	
- }
-
- if (function_exists("enqueuescripts")) {
- 	enqueuescripts();
- }
+    add_image_size ('portfolio-item-frontpage', 230, 180);
+    add_image_size ('portfolio-item-overview', 230, 180);
+    add_image_size ('blog-item-frontpage', 350, 9999);
 
 
+    // enqueue scripts
+     function enqueuescripts () {
+     	wp_enqueue_script("jquery");
+     	
+     }
+
+     if (function_exists("enqueuescripts")) {
+     	enqueuescripts();
+     }
+    // register nav bar
+
+     register_nav_menus( array(
+        'primary' => __( 'Primary Menu', 'epw' ),
+        'footer'  => __('Footer Menu', 'epw'),
+      ) );
+
+}
+endif;
+add_action( 'after_setup_theme', 'epw_setup' );
 // include jquery 
 
 
