@@ -11,28 +11,26 @@
                        Pablo
                     </a>
                 </li>
-                <li>
-                    <a href="index.php">Home</a>
-                </li>
-                <li>
-                    <a href="page-aboutme.php">About me</a>
-                </li>
+                
+
+                <?php wp_nav_menu( array(
+                                'theme_location'  => 'primary', 
+                                'menu'            => 'Primary Menu',
+                                'container'       => 'div',
+                                'container_class' => 'menu-{menu slug}-container',
+                                'container_id'    => 'cssmenu',
+                                'menu_class'      => 'menu',
+                                'menu_id'         => '',
+                                'echo'            => true,
+                                'before'          => '',
+                                'after'           => '',
+                                'link_before'     => '',
+                                'link_after'      => '',
+                                'items_wrap'      => '<ul>%3$s</ul>'
+                                ) ); ?>                 
                
               
-                <li class="dropdown">
-                  <a href="page-portfolio.php" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    
-                    <li><a href="#">School</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Personal</a></li>
-                   
-                  </ul>
-                </li>
-
-                 <li>
-                    <a href="#">My blog </a>
-                </li>
+                
               
             </ul>
         </nav>
