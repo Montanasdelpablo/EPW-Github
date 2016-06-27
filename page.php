@@ -17,6 +17,7 @@ require 'header.php';
 			$loop = new WP_Query( $args );
 			
 			while ( $loop->have_posts() ) : $loop->the_post();
+			
 			echo "<div id='' class='col-md-6'>";
 
 			echo "<div class='entry-content'>";
@@ -37,6 +38,7 @@ require 'header.php';
 		  	  
 		  	    
 			echo "</div>";
+			
 			endwhile;
 
 			?>

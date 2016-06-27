@@ -1,3 +1,5 @@
+
+<div class="row">
 <form class="col-md-6 col-md-offset-3">
   <fieldset class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -30,4 +32,8 @@
   </div>
   
   <button type="submit" class="btn btn-danger">Submit</button>
+  <br> <br>
+  <br> <br>
+  <br> <br>
 </form>
+</div>
