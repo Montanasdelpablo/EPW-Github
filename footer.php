@@ -4,7 +4,7 @@
 	<div class="row">
 		
 		<div class="col-xs-5 text-right">
-			<h1> Meta data	</h1>
+			<h1> Meta	</h1>
 			<ul>
 			<!-- META GEGEVENS SITE -->
 			
@@ -45,12 +45,12 @@
 			</ul>
 		</div>
 
-		<div class="col-xs-5">
+		<div class="col-xs-5 text-left">
 		<!-- CONTACT DETAILS -->
 			<h1>  Contact	</h1>
 			<ul>
 				<li> 
-					<a href=""> Pablo ~ </a>
+					<a href=""> Pablo </a>
 				</li>
 
 				<li> 
@@ -58,7 +58,7 @@
 				</li>
 
 				<li> 
-					<a href=""> ~ Groningen </a>
+					<a href=""> Groningen </a>
 				</li>
 
 				

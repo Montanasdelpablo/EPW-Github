@@ -56,7 +56,7 @@ All the portfolio items are divided into short letter codes. For example; IMI st
 		<div class="row">
 			<?php 
 
-			$args = array( 'post_type' => 'portfolio', 'posts_per_page' => 9, 'order' => 'ASC' );
+			$args = array( 'post_type' => 'portfolio', 'posts_per_page' => 6, 'order' => 'ASC' );
 			$loop = new WP_Query( $args );
 			
 			while ( $loop->have_posts() ) : $loop->the_post();
