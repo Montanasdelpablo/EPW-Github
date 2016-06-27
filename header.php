@@ -9,7 +9,8 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/menu.css">	
+	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/sidebar-menu.css">	
+	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/main-menu.css">	
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/css/theme-responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo("template_url")?>/style.css">
