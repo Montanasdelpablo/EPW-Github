@@ -7,24 +7,21 @@
 			<h1> Meta data	</h1>
 			<ul>
 			<!-- META GEGEVENS SITE -->
-				<li>
-					<a href=""> Uitloggen</a>
-				</li>
-
+			
 				<li>
 					<a href=""> Sitemap </a>
 				</li>
 
 				<li>
-					<a href=""> Motivatie pagina </a>
+					<a href="index.php?page_id=38"> Motivatie pagina </a>
 				</li>
 
 				<li>
-					<a href=""> Verantwoording </a>
+					<a href="index.php?page_id=42"> Verantwoording </a>
 				</li>
 
 				<li>
-					<a href=""> Wireframes </a>
+					<a href="index.php?page_id=35"> Wireframes </a>
 				</li>
 
 
