@@ -24,7 +24,7 @@ html {
 		width: 100%;
 		height: 100%;
 		font-family: Open Sans;
-		position: relative;
+		
     	overflow-x: hidden;
 	}
 
@@ -33,6 +33,8 @@ body {
 	padding: 0;
 	width: 100%;
 	height: 100%;
+	position: absolute;
+	
 }
 
 h1 {
@@ -44,6 +46,26 @@ h1 {
 p {
 	font-size:18px;
 	font-family: Open Sans;
+}
+
+#error {
+	width:100%;
+	background-color: #f07766;
+	min-height: 80%;
+	margin:0;
+	padding: 0;
+}
+
+#ohno {
+	font-size:120px;
+	position: absolute;
+	color: #fff;
+	top:150px;
+}
+
+#error h1 {
+	position: absolute;
+	top:300px;
 }
 /*
 .mainnavigation {
@@ -82,8 +104,11 @@ p {
 	padding:0;
 	margin-bottom:25px;
 	margin-top:25px;
-	padding-bottom:50px;
+	
 }
+
+
+
 /*
 .container-bg {
 	width: 100%;
@@ -386,13 +411,52 @@ p {
 
 }
 
+#portfolio  {
+	margin-left:0px;
+	margin-right:0px;
+	min-height:100%;
+	padding:0px;
+
+}
+
+#portfolioitemov {
+	padding-left:50px;
+	
+	
+}
+
+
+
+#portfolio .section {
+	background-color: #F4F3F3;
+	padding-top:5px;
+	padding-bottom:5px;
+
+	
+}
+
+#portfolio .row {
+	width: 100%;
+}
+
+#header .main-nav {
+	margin: 0 auto;
+}
+
+#header #cssmenu {
+	float:none;
+}
+
 
 
 
 #footer {
-	height: 220px;
-	position: fixed;
+	height: 250px;
+	position: relative;
 	width: 100%;
+	margin-top:25px;
+	margin-left:0px;
+	margin-right:0px;
 	background-color: #625E55;
 	border-top:5px solid grey;
 	bottom:0;
@@ -404,6 +468,7 @@ p {
  #footer ul, h1 {
  	margin-left:0px;
  	margin-right:0px;
+ 	padding-left: 0px;
  }
 
  #footer ul li {
@@ -429,7 +494,7 @@ p {
  
  #footer .row div {
  	display: inline-block;
- 	height:100%;
+ 	height:130px;
  	 }
 
  #footer #socialmediaicons li {
@@ -438,6 +503,8 @@ p {
  	top:27px;
  	
  }
+
+
 
 
 /* MEDIA QUERIES ABOVE 768px */
@@ -561,6 +628,47 @@ p {
 #blogitem:last-child button {
 	top:133px;
 }
+
+#portfolio  {
+	margin-left:0px;
+	margin-right:0px;
+	min-height:100%;
+	padding:0px;
+}
+
+#portfolioitemov {
+	padding-left:50px;
+	position: absolute;
+	
+}
+
+#portfolio .section {
+	background-color: #F4F3F3;
+	padding-top:5px;
+	padding-bottom:35px;
+	width:100%;
+	height:400px;
+	position: relative;
+	padding-right:0px;
+	
+
+}
+#portfolio .section {
+	background-color: #F4F3F3;
+	padding-top:5px;
+	padding-bottom:5px;
+
+	
+}
+
+#portfolio .row {
+	width: 100%;
+}
+
+.container {
+	width:100%;
+}
+
 #contact {
 	width: 100%;
 	height:550px;
@@ -578,10 +686,15 @@ p {
 
 }
 
+
+
 #footer {
-	height: 150px;
-	position: fixed;
+	height: 250px;
+	position: relative;
+	top:50px;
 	width: 100%;
+	margin-left:0px;
+	margin-right:0px;
 	background-color: #625E55;
 	border-top:5px solid grey;
 	bottom:0;
@@ -591,7 +704,7 @@ p {
 
 #footer ul li {
  	list-style-type: none;
- 	display: inline;
+ 	
 
  }
 
@@ -608,7 +721,7 @@ p {
 
 #footer .row div {
  	display: inline-block;
- 	height:100%;
+ 	height:79%;
  }
 
  #socialmediaicons {
@@ -622,6 +735,8 @@ p {
  	width:45px;
  	height:45px;
  	position: relative;
+ 	display: inline-block;
+ 	left:35px;
  	top:27px;
  	margin-right:5px;
  	margin-left:5px;
